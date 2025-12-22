@@ -11,6 +11,5 @@ class Solution:
         if list(d.values()) == []:
             return 0
         
-        m = max(list(d.values()))
         return max(list(d.values()))
             
