@@ -7,4 +7,4 @@ class Solution:
                 l[ord(char) - ord('a')] += 1 
             d[tuple(l)] = [word] + d.get(tuple(l), [])
         l = list(d.values())
-        return l
+        return list(d.values())
