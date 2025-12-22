@@ -12,5 +12,5 @@ class Solution:
             return 0
         
         m = max(list(d.values()))
-        return m
+        return max(list(d.values()))
             
