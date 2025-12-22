@@ -8,8 +8,9 @@ class Solution:
                 d[n] = d[n-1] + 1
             else:
                 d[n] = 1
-        l = list(d.values())
-        if l == []:
+        if list(d.values()) == []:
             return 0
-        return max(list(d.values()))
+        
+        m = max(list(d.values()))
+        return m
             
