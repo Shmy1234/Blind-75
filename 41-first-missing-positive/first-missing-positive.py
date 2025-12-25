@@ -1,7 +1,5 @@
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
-        if nums == []:
-            return 1
         nums.sort()
         m = 0
         d = {}
