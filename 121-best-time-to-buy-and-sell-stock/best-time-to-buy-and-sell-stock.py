@@ -1,6 +1,8 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        i, j, m = 0, 0, 0
+        i = 0
+        j = 0
+        m = 0
         while j < len(prices):
             if i == j:
                 j += 1
@@ -9,5 +11,6 @@ class Solution:
             else:
                 m = max(m, prices[j] - prices[i])
                 j += 1
+        
         return m
         
