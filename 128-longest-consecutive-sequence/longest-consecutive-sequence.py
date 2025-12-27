@@ -7,4 +7,5 @@ class Solution:
                 d[n] = d[n-1] + 1
             else:
                 d[n] = 1
-        return max(list(d.values())) if list(d.values()) else 0
+        l = list(d.values())
+        return max(l) if l else 0
